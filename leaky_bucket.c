@@ -28,3 +28,72 @@ printf("After sending, Bucket status contains %d packets out of %d\n",bucket_sto
 n--;
 }
 }
+
+
+
+/// output /////
+Enter the bucket size: 3
+Enter the no of inputs: 5
+Enter the packet outgoing rate: 2
+Initially Bucket status contains 0 out of 3
+Enter the incoming packet size 
+3
+Incoming packet size is 3
+Bucket status: contains 3 out of 3
+After sending, Bucket status contains 1 packets out of 3
+Enter the incoming packet size 
+5
+Incoming packet size is 5
+Dropped packets:3
+Bucket status: contains 3 out of 3
+After sending, Bucket status contains 1 packets out of 3
+Enter the incoming packet size 
+5
+Incoming packet size is 5
+Dropped packets:3
+Bucket status: contains 3 out of 3
+After sending, Bucket status contains 1 packets out of 3
+Enter the incoming packet size 
+5
+Incoming packet size is 5
+Dropped packets:3
+Bucket status: contains 3 out of 3
+After sending, Bucket status contains 1 packets out of 3
+Enter the incoming packet size 
+^Z
+[1]+  Stopped                 ./a.out
+s6bcs12@admincs-ProLiant-ML10:~$ ./a.out
+Enter the bucket size: 3
+Enter the no of inputs: 5
+Enter the packet outgoing rate: 2
+Initially Bucket status contains 0 out of 3
+Enter the incoming packet size 
+5
+Incoming packet size is 5
+Dropped packets:2
+Bucket status: contains 3 out of 3
+After sending, Bucket status contains 1 packets out of 3
+Enter the incoming packet size 
+5
+Incoming packet size is 5
+Dropped packets:3
+Bucket status: contains 3 out of 3
+After sending, Bucket status contains 1 packets out of 3
+Enter the incoming packet size 
+5
+Incoming packet size is 5
+Dropped packets:3
+Bucket status: contains 3 out of 3
+After sending, Bucket status contains 1 packets out of 3
+Enter the incoming packet size 
+5
+Incoming packet size is 5
+Dropped packets:3
+Bucket status: contains 3 out of 3
+After sending, Bucket status contains 1 packets out of 3
+Enter the incoming packet size 
+2
+Incoming packet size is 2
+Bucket status: contains 3 out of 3
+After sending, Bucket status contains 1 packets out of 3
+
